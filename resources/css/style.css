@@ -1,8 +1,146 @@
 /* UNIVERSAL STYLES */
 
-* {
+:root {
+    --color-violet: hsl(263, 55%, 52%);
+    --color-dark-blackish-blue: hsl(219, 29%, 14%);
+    --color-dark-grayish-blue: hsl(217, 19%, 35%);
+    --color-light-grayish-blue: hsl(210, 46%, 95%);
+    --color-light-gray: hsl(0, 0%, 81%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 50%;
+}
+
+body {
+    background-color: var(--color-light-grayish-blue);
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.625rem;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN */
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CONTAINER */
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(0, 50rem);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 4rem;
+    max-width: 150rem;
+    padding: 9rem 3rem;
+}
+
+.card {
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 20px 40px 60px -20px rgba(0, 0, 0, .25);
+}
+
+.card-1 {
+    position: relative;
+    background-color: var(--color-violet);
+    z-index: 1;
+}
+
+.card-1::before {
+    content: url(../images/bg-pattern-quotation.svg);
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    z-index: 2;
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    z-index: 3;
+}
+
+.author-avatar {
+    width: 4rem;
+    margin-right: 2rem;
+    border: 2px solid hsla(0, 0%, 100%, .5);
+    border-radius: 50%;
+}
+
+.author-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-title {
+    font-size: 1.375rem;
+    opacity: 50%;
+}
+
+.quote {
+    font-size: 2.5rem;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 2rem;
+    z-index: 3;
+}
+
+.paragraph {
+    line-height: 2.25rem;
+    opacity: 70%;
+}
+
+.card-2 {
+    background-color: var(--color-dark-grayish-blue);
+}
+
+.card-3 {
+    background-color: var(--color-white);
+    color: var(--color-dark-blackish-blue);
+}
+
+.card-4 {
+    background-color: var(--color-dark-blackish-blue);
+}
+
+
+.card-5 {
+    background-color: var(--color-white);
+    color: var(--color-dark-blackish-blue);
+}
+
+/* FOOTER */
+
+footer {
+    color: #000;
+    padding: 3rem 2rem;
+    text-align: center;
+    display: block;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer a {
+    color: #000;
 }
