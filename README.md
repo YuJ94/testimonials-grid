@@ -1,13 +1,13 @@
 # Testimonials Grid
-A Frontend Mentor challenge to help practice and develop my skills with CSS grid layouts using mobile-first design.
+A Frontend Mentor challenge to practice CSS grid using a mobile-first design approach.
 
 ## Screenshot
 ![preview of landing page](./resources/images/testimonials-grid.jpg)
 
 ## Visit
-Click [here](https://yuj94.github.io/testimonials-grid/) to visit the website.
+To view this website live, please visit [here](https://yuj94.github.io/testimonials-grid/).
 
-## Technologies
+## Technologies Used
 Project was built with:
 - HTML
 - CSS
